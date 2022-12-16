@@ -1,0 +1,327 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: white;
+    color: #555;
+    font-family: Lato,sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    text-decoration:none;
+    color:#555;
+}
+
+a:hover{
+    background-color: #f0eded;
+    border-radius: 10px;
+}
+
+img{
+    cursor:pointer;
+}
+
+.flex-div{
+    display:flex;
+    align-items: center;
+}
+
+nav{
+    padding:10px 2%;
+    justify-content:space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.fill{
+    color:red;
+}
+
+.nav-left .youtube-logo{
+    margin-right: 3px;
+}
+
+.nav-left ins{
+    margin-bottom: 1px;
+    margin-left: 0px;
+}
+
+.nav-left ins sup{
+    padding:3px;
+    font-size: 13px;
+}
+
+.youtube{
+    text-decoration: none;
+}
+
+.nav-right img,ion-icon{
+    width:25px;
+    height:25px;
+    margin-right: 25px;
+}
+
+.nav-right .profile-image{
+   width:35px;
+   height:35px;
+   border-radius: 50%;
+   margin-right: 0;
+}
+
+.nav-middle .mic-outline{
+    width:25px;
+    height:30px;
+}
+
+.nav-middle .search-box{
+    border:1px solid #ccc;
+    margin-right:15px;
+    padding:8px 12px;
+    border-radius: 25px;
+}
+
+.nav-middle .search-box input{
+    width:400px;
+    border:0;
+    outline:0;
+    background: transparent;
+}
+
+.nav-middle .search-box ion-icon{
+    width:20px;
+}
+
+/* ------- Sidebar ---------- */
+
+.sidebar{
+    background: #fff;
+    width:15%;
+    height:100vh;
+    position:relative;
+    top:0;
+    padding-left: 2%;
+    padding-top: 15px;
+    float:left;
+}
+
+.sidebar p{
+    font-size: 13px;
+}
+
+
+.shortcut-links a img,ion-icon{
+    width:20px;
+    margin-right: 20px;
+}
+
+.shortcut-links a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width:fit-content;
+    flex-wrap: wrap;
+}
+
+.sidebar hr{
+    border:0;
+    height:1px;
+    background:#ccc;
+    width:85%;
+}
+
+#library,#settings{
+    margin-top: 15px;
+}
+
+
+.subscribed-list h3{
+    font-size: 13px;
+    padding:20px 0;
+    color:#5a5a5a;
+}
+
+.subscribed-list a img{
+    width:25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.subscribed-list a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width:fit-content;
+    flex-wrap: wrap;
+}
+
+.explore h3{
+    font-size: 13px;
+    padding:20px 0;
+    color:#5a5a5a;
+}
+
+.more-youtube h3{
+    font-size: 13px;
+    padding:20px 0;
+    color:#5a5a5a;
+}
+
+
+.help h3{
+    font-size: 13px;
+    padding:20px 0;
+    color:#5a5a5a;
+}
+
+#feedback{padding-bottom: 2px;}
+
+.sidebar-1{
+    width:11%;
+}
+
+.sidebar-1 h3{
+    display: none;
+}
+
+.sidebar-1 hr{
+    display: none;
+}
+
+.sidebar-1 .subscribed-list{
+    display: none;
+}
+
+.sidebar-1 .explore{
+    display: none;
+}
+
+.sidebar-1 .more-youtube{
+    display: none;
+}
+
+.sidebar-1 .help{
+    display: none;
+}
+
+.sidebar-1 #history{
+    display: none;
+}
+
+.sidebar-1 #watch{
+    display: none;
+}
+
+.sidebar-1 #liked-videos{
+    display: none;
+}
+
+.sidebar-1{
+    display:flex;
+    align-items: baseline;
+}
+
+
+#scroller{
+    overflow-y: auto;
+    height:780px;
+}
+
+/* ------------ Main -------------*/
+.container{
+    background: #f9f9f9;
+    padding-left: 17%;
+    padding-top: 20px;
+    padding-right: 2%;
+    padding-bottom: 20px;
+}
+
+.container-1{
+    margin-right:-7px;
+    margin-left:-65px;
+}
+
+
+.banner{
+    width:100%;
+}
+
+.banner img{
+    width: 100%;
+    height:350px;
+    border-radius: 8px;
+    object-fit:fill;
+}
+
+.list-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-column-gap:16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+
+.vid-list:hover{
+    margin:-10px;
+}
+.vid-list .thumbnail{
+    width:100%;
+    border-radius: 5px;
+}
+
+.vid-list .flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.vid-list .flex-div img{
+    width:35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.vid-info{
+    color:#5a5a5a;
+    font-size: 13px;
+}
+
+.vid-info a{
+    color:black;
+    font-weight: 600;
+    display: block;
+    margin-top: 5px;
+}
+
+@media(max-width:900px){
+    .menu-icon{
+        display:none;
+    }
+    .sidebar{
+        display:none;
+    }
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;;
+    }
+    .nav-right img{
+        display: block;
+        width:30px;
+    }
+    .nav-right ion-icon{
+        display:none;
+    }
+    .nav-middle .search-box input{
+        width:100px;
+    }
+    .nav-middle .mic-outline{
+        display:none;
+    }
+}

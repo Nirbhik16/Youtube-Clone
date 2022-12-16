@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+            <ion-icon name="logo-youtube" class="youtube-logo fill"></ion-icon>
+            <ins class="youtube">Youtube<sup>IN</sup></ins>
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+            <ion-icon name="mic-outline" class="mic-outline"></ion-icon>
+        </div>
+        <div class="nav-right flex-div">
+            <ion-icon name="film-outline"></ion-icon>
+            <ion-icon name="alarm-outline"></ion-icon>
+            <img src="Images/Profile-image.jpeg" alt="Profile-Image" class="profile-image">
+        </div>
+    </nav>
+
+    <!-- ------------ Sidebar ------------ -->
+
+    <div class="sidebar" id="scroller">
+        <div class="shortcut-links">
+            <a href=""><ion-icon name="home-sharp" class="fill"></ion-icon><p>Home</p></a>
+            <a href=""><img src="Images/yt-shorts.png" alt="Youtube Shorts"><p>Shorts</p></a>
+            <a href=""><ion-icon name="albums-sharp" class="fill"></ion-icon><p>Subsrciptions</p></a>
+
+            <hr>
+            
+            <a href="" id="library"><img src="Images/library.png" alt=""><p>Library</p></a>
+            <a href="" id="history"><img src="Images/history.png" alt=""><p>History</p></a>
+            <a href="" id="watch"><ion-icon name="time-outline"></ion-icon><p>Watch Later</p></a>
+            <a href="" id="liked-videos"><ion-icon name="thumbs-up-sharp" class="fill"></ion-icon><p>Liked Videos</p></a>
+
+            <hr>
+        </div>
+        <div class="subscribed-list">
+            <h3>Subscriptions</h3>
+            <a href=""><img src="Images/Creators/flying-beast.jpeg" alt=""><p>Flying Beast</p></a>
+            <a href=""><img src="Images/Creators/ranveer.jpeg" alt=""><p>Ranveer Allahbadia</p></a>
+            <a href=""><img src="Images/Creators/ashish.jpeg" alt=""><p>Ashish Chanchlani</p></a>
+            <a href=""><img src="Images/Creators/suhani-shah.jpeg" alt=""><p>Suhani Shah</p></a>
+            <hr>
+        </div>
+
+        <div class="explore shortcut-links">
+            <h3>Explore</h3>
+            <a href=""><ion-icon name="flame" class="fill"></ion-icon><p>Trending</p></a>
+            <a href=""><ion-icon name="musical-note-outline" class="fill"></ion-icon><p>Music</p></a>
+            <a href=""><ion-icon name="film-outline" class="fill"></ion-icon><p>Movies</p></a>
+            <a href=""><img src="Images/live.png" alt=""><p>Live</p></a>
+            <a href=""><ion-icon name="game-controller-outline" class="fill"></ion-icon><p>Gaming</p></a>
+            <a href=""><ion-icon name="newspaper-outline" class="fill"></ion-icon><p>News</p></a>
+            <a href=""><ion-icon name="trophy-outline" class="fill"></ion-icon><p>Sports</p></a>
+            <a href=""><ion-icon name="bulb-outline" class="fill"></ion-icon><p>Learning</p></a>
+            <a href=""><img src="Images/fashion&beauty.png" alt=""><p>Fashion & Beauty</p></a>
+
+            <hr>
+        </div>
+
+        <div class="more-youtube shortcut-links">
+            <h3>More from Youtube</h3>
+            <a href=""><ion-icon name="logo-youtube" class="fill"></ion-icon><p>Youtube Premium</p></a>
+            <a href=""><img src="Images/creator-studio.png" alt=""><p>Creator Studio</p></a>
+            <a href=""><img src="Images/Youtube-Music.png" alt=""><p>Youtube Music</p></a>
+            <a href=""><img src="Images/Youtube-Kids.png" alt=""><p>Youtube Kids</p></a>
+            <a href=""><img src="Images/Youtube-tv.png" alt=""><p>Youtube TV</p></a>
+            <hr>
+        </div>
+
+        <div class="help shortcut-links">
+            <a href="" id="settings"><ion-icon name="cog-outline"></ion-icon><p>Settings</p></a>
+            <a href=""><ion-icon name="flag-outline"></ion-icon><p>Report History</p></a>
+            <a href=""><ion-icon name="help-circle-outline"></ion-icon><p>Help</p></a>
+            <a href="" id="feedback"><ion-icon name="alert-circle-outline"></ion-icon><p>Send feedback</p></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="banner">
+            <img src="Images/college1.jpeg" alt="">
+        </div>
+        <div class="list-container">
+            <div class="vid-list">
+                <a href=""><img src="Images/Creators/thumbnail-flyingbeast-1.jpeg" alt="" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="Images/Creators/flying-beast.jpeg" alt="">
+                    <div class="vid-info">
+                        <a href="">Why I'm winning</a>
+                        <p>Flying Beast</p>
+                        <p>60 lakh views &bull; 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="Images/Creators/thumbnail-suhanishah-1.jpeg" alt="" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="Images/Creators/suhani-shah.jpeg" alt="">
+                    <div class="vid-info">
+                        <a href="">Mind Reading Magic with @Triggered Insaan | Suhani Shah</a>
+                        <p>Suhani Shah</p>
+                        <p>62 lakh views &bull; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="Images/Creators/thumbnail-flyingbeast-2.jpg" alt="" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="Images/Creators/flying-beast.jpeg" alt="">
+                    <div class="vid-info">
+                        <a href="">First day of School after Summer Vacations</a>
+                        <p>Flying Beast</p>
+                        <p>16 lakh views &bull; 5 months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="Images/Creators/thumbnail-ranveer-1.jpeg" alt="" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="Images/Creators/ranveer.jpeg" alt="">
+                    <div class="vid-info">
+                        <a href="">10 Quick Fashion Tips For Indian Men | The Ranveer Show</a>
+                        <p>Ranveer Allahbadia</p>
+                        <p>4.9 lakh views &bull; 11 months ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="Images/Creators/thumbnail-ashish-1.jpeg" alt="" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="Images/Creators/ashish.jpeg" alt="">
+                    <div class="vid-info">
+                        <a href="">Final Exams | Ashish Chanchlani</a>
+                        <p>ashish chanchlani vines</p>
+                        <p>7.7 crore views &bull; 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="Images/Creators/thumbnail-ashish-2.jpeg" alt="" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="Images/Creators/ashish.jpeg" alt="">
+                    <div class="vid-info">
+                        <a href="">Office Exam Aur Vaccine | Ashish Chanchlani</a>
+                        <p>ashish chanchlani vines</p>
+                        <p>7.8 crore views &bull; 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="Images/Creators/thumbnail-brut-1.jpeg" alt="" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="Images/Creators/brut.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Inside BeerBicep's Mumbai Home | Brut Sauce</a>
+                        <p>Brut India</p>
+                        <p>2.3 lakh views &bull; 1 month ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vid-list">
+                <a href=""><img src="Images/Creators/thumbnail-carryminati-1.jpeg" alt="" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="Images/Creators/carryminati.jpeg" alt="">
+                    <div class="vid-info">
+                        <a href="">THE END | CarryMinati</a>
+                        <p>CarryMinati</p>
+                        <p>10 crore views &bull; 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
